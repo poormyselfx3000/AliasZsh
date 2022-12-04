@@ -1,4 +1,5 @@
 alias c='clear'
+alias py='python'
 
 # file
 alias ..='cd ..'
@@ -8,14 +9,27 @@ alias ll='ls -l'
 alias up='docker-compose -f phu.yml up'
 alias reapi='docker-compose -f phu.yml restart api'
 
-
-# Git Commands
-# Add and Commit are used as functions
+# git
 alias regit='git branch -d $(git branch | grep -v "develop")'
-alias gpo='git push origin master'
-alias gp='git pull'
-alias gs='git status'
-alias gd='git diff'
-alias gr='git reflog'
-alias glf='git ls-files'
+alias gp='git pull orgin develop'
+alias gpstaging='git pull orgin staging'
+alias gnewbranch='git checkout -b'
 
+gitpu () {
+    git add *
+    git commit -m "Auto"
+    git push origin master
+}
+
+# function
+opencmd () {
+    cd ./cool
+    start cmd.exe @cmd /k "Command"
+    start bash
+    start bash
+}
+
+sdktest () {
+    npm run build
+    node test.js
+}
