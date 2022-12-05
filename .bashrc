@@ -11,6 +11,8 @@ alias reapi='docker-compose -f phu.yml restart api'
 
 # git
 alias regit='git branch -d $(git branch | grep -v "develop")'
+alias gitcheck='git checkout -b '
+alias gitpush='git push --set-upstream origin $(git branch --show-current)'
 alias gp='git pull orgin develop'
 alias gpstaging='git pull orgin staging'
 alias gnewbranch='git checkout -b'
@@ -26,6 +28,11 @@ gitcd () {
     git pull
 }
 
+gitomg () {
+    # asking + show + ask yes/no
+    gitpu
+    regit
+}
 # function
 opencmd () {
     cd ./cool
