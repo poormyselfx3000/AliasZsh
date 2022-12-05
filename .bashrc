@@ -33,6 +33,7 @@ gitomg () {
     gitpu
     regit
 }
+
 # function
 opencmd () {
     cd ./cool
