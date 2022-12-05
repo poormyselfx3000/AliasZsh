@@ -21,6 +21,11 @@ gitpu () {
     git push origin master
 }
 
+gitcd () {
+    git checkout develop
+    git pull
+}
+
 # function
 opencmd () {
     cd ./cool
