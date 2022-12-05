@@ -15,7 +15,6 @@ alias gitcheck='git checkout -b '
 alias gitpush='git push --set-upstream origin $(git branch --show-current)'
 alias gp='git pull orgin develop'
 alias gpstaging='git pull orgin staging'
-alias gnewbranch='git checkout -b'
 
 gitpu () {
     git add *
@@ -29,10 +28,15 @@ gitcd () {
 }
 
 gitomg () {
-    # asking + show + ask yes/no
-    gitpu
-    regit
+    git branch
+    echo "Are you sure to delete all local branches except develop? (y/n)"
+    read answer
+    if [ "$answer" != "${answer#[Yy]}" ] ;then
+        gitcd
+        regit
+    fi
 }
+
 # function
 opencmd () {
     cd ./cool
