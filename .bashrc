@@ -13,8 +13,8 @@ alias reapi='docker-compose -f phu.yml restart api'
 alias regit='git branch -d $(git branch | grep -v "develop")'
 alias gitcheck='git checkout -b '
 alias gitpush='git push --set-upstream origin $(git branch --show-current)'
-alias gp='git pull orgin develop'
-alias gpstaging='git pull orgin staging'
+alias gp='git pull origin develop'
+alias gpstaging='git pull origin staging'
 
 gitpu () {
     git add *
