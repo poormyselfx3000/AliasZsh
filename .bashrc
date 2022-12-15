@@ -16,10 +16,15 @@ alias gitpush='git push --set-upstream origin $(git branch --show-current)'
 alias gp='git pull origin develop'
 alias gpstaging='git pull origin staging'
 
-gitpu () {
-    git add *
-    git commit -m "Auto"
-    git push origin master
+gitpu() {
+    [[ -z "$1" ]] && echo "Please enter a commit message:";
+    typeset msg="$( [[ -n "$1" ]] && echo "$*" || echo $(head -1) )";
+    date;
+    git pull;
+    git add .;
+    git commit -m "$msg";
+    gitpush;
+    date
 }
 
 gitcd () {
