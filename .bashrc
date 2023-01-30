@@ -1,3 +1,4 @@
+alias zsh='wsl zsh'
 alias c='clear'
 alias py='python'
 
