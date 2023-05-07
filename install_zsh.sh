@@ -15,5 +15,3 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/
 # Enable Zsh Syntax Highlighting
 source ~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# Restart the terminal or source the ~/.zshrc file for the changes to take effect
-source ~/.zshrc
