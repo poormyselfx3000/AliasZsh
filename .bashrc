@@ -1,6 +1,7 @@
-alias zsh='wsl zsh'
+
 alias c='clear'
-alias py='python'
+alias py='python3'
+alias python='python3'
 
 # file
 alias ..='cd ..'
@@ -43,13 +44,6 @@ gitomg () {
     fi
 }
 
-# function
-opencmd () {
-    cd ./cool
-    start cmd.exe @cmd /k "Command"
-    start bash
-    start bash
-}
 
 sdktest () {
     npm run build
