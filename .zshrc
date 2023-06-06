@@ -104,6 +104,9 @@ alias c='clear'
 alias py='python3'
 alias python="python3"
 
+# ssh
+alias up='ssh root@174.138.29.113'
+
 # file
 alias ..='cd ..'
 alias ll='ls -l'
