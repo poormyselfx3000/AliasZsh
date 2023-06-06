@@ -105,7 +105,7 @@ alias py='python3'
 alias python="python3"
 
 # ssh
-alias vps='ssh root@174.138.29.113'
+alias vps='ssh root@174.138.29.113' # -p 96
 
 # file
 alias ..='cd ..'
