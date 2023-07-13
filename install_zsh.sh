@@ -16,4 +16,4 @@ cp .zshrc ~/
 
 source ~/.zshrc
 
-sudo apt-get install konsole
+apt-get install konsole
