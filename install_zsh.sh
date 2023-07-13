@@ -15,3 +15,5 @@ chsh -s $(which zsh)
 cp .zshrc ~/
 
 source ~/.zshrc
+
+sudo apt-get install konsole
