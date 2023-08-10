@@ -119,6 +119,8 @@ alias ll='ls -l'
 alias up='docker-compose -f phu.yml up'
 alias reapi='docker-compose -f phu.yml restart api'
 
+alias wp="docker-compose run --rm wpcli"
+
 # git
 alias regit='git branch -d $(git branch | grep -v "develop")'
 alias gitcheck='git checkout -b '
