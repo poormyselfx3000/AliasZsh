@@ -16,7 +16,7 @@ cp .zshrc ~/
 
 source ~/.zshrc
 
-apt-get install konsole
+apt-get install konsole -y
 apt-get install docker-compose -y
 sudo usermod -aG docker $USER
 newgrp docker
