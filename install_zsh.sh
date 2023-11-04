@@ -1,5 +1,8 @@
 #!/bin/bash
 
+apt-get update
+apt-get upgrade -y
+
 sudo apt-get install zsh -y
 # Install Oh My Zsh
 curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | sh /dev/stdin --unattended
